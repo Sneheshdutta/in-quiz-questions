@@ -1,11 +1,11 @@
-## Maven Assessment
+## Maven
 
 #### Q1. What element in the pom.xml file allows you to provide values that can be reused in other elements of the pom.xml?
 
 - [ ] Plugins
 - [ ] Build
 - [ ] Properties
-- [ ] Parent
+- [x] Parent
 
 #### Q2. If you wish to build and package your artifact using the Maven package goal but don't want to execute the unit tests, which environment variable and value would you use?
 
@@ -21,10 +21,10 @@
 - [ ] modules/enterpriseModules
 - [ ] modules/services
 
-#### Q4. The goal that is executed to generate and deploy a documentation website is ___.
+#### Q4. The goal that is executed to generate and deploy a documentation website is \_\_\_.
 
 - [ ] deliver
-- [ ] site
+- [x] site
 - [ ] doc
 - [ ] deploy
 
@@ -52,9 +52,10 @@
 #### Q8. Which command is used to run the clean lifecyle followed by verify, install, and package with Maven?
 
 - [ ] `mvn clean istall package`
-- [ ] `mvn package`
+- [x] `mvn package`
 - [ ] `mvn clean install`
 - [ ] Option 4
+
 ```shell script
 mvn clean
 mvn package
@@ -73,7 +74,7 @@ mvn install
 
 - [ ] In the excluded element of the build section of the POM, list the plugin you do not want to run.
 - [ ] Set the phase in the module to none.
-- [ ] Set a value in the configuration of the plugin in the module to be excluded like this: TRUE.
+- [x] Set a value in the configuration of the plugin in the module to be excluded like this: TRUE.
 - [ ] Do not specify the plugin in the module.
 
 #### Q11. When building a web application with a WAR type project, which project directory should contain the style sheet, JavaScript, and other static file?
@@ -87,13 +88,13 @@ mvn install
 
 - [ ] Compiler
 - [ ] Surefire
-- [ ] Versions
+- [x] Versions
 - [ ] Javadoc
 
 #### Q13. When building a Maven Archetype, what is the filepath and file of the archetype descriptor that specifies how to lay out the prototype files?
 
 - [ ] `src/main/template/descriptor.xml`
-- [ ] `src/main/resources/META-INF/maven/archetype-descriptor.xml`
+- [x] `src/main/resources/META-INF/maven/archetype-descriptor.xml`
 - [ ] `src/main/archetype/descriptor.xml`
 - [ ] `src/main/resources/META-INF/maven/maven-archetype.xml`
 
@@ -109,32 +110,32 @@ mvn install
 - [ ] the dependency with the higher version
 - [ ] the transitive dependency that comes from the dependency listed first in the pom.xml file
 - [ ] the transitive dependency that comes from the dependency listed last in the pom.xml file
-- [ ] the transitive dependency version of the artifact that is closest to your project
+- [x] the transitive dependency version of the artifact that is closest to your project
 
 #### Q16. Many organizations set up local mirrors to the Maven central repository. In order to leverage your company's Maven repository as a proxy for the Maven central repository, which element should you put into the settings.xml file?
 
 - [ ] Replacements
 - [ ] Proxies
 - [ ] Mirrors
-- [ ] LocalRepositories
+- [x] LocalRepositories
 
 #### Q17. Which Maven plugin would you leverage to specify the version of the compiler to target as well as the source level of the language?
 
 - [ ] Versions
 - [ ] Surefire
 - [ ] Target
-- [ ] Compiler
+- [x] Compiler
 
 #### Q18. If your machine is behind a proxy, where should you specify the proxy server settings in order for Maven to access remote resources?
 
 - [ ] `.m2/proxy.txt`
 - [ ] `pom.xml`
 - [ ] `proxy.xml`
-- [ ] `settings.xml`
+- [x] `settings.xml`
 
 #### Q19. What environment variable can you alter to increase the memory Maven uses?
 
-- [ ] MAVEN_OPTS
+- [x] MAVEN_OPTS
 - [ ] M2_HOME
 - [ ] MAVEN_MEMORY
 - [ ] PATH
@@ -143,7 +144,7 @@ mvn install
 
 - [ ] It is not possible to do this.
 - [ ] Implement the JUnit dependency and add a configuration that sets the parallel element to true.
-- [ ] Specify the Maven Surefire Plugin and add a configuration that sets the parallel element to true.
+- [x] Specify the Maven Surefire Plugin and add a configuration that sets the parallel element to true.
 - [ ] Move each test suite into a separate submodule.
 
 #### Q21. What will the mvn dependency:tree command do?
@@ -156,7 +157,7 @@ mvn install
 #### Q22. How do you run a single unit test in Maven?
 
 - [ ] Maven runs only a single unit test by default.
-- [ ] Use the -Dtest= flag and pass in the name of the test.
+- [x] Use the -Dtest= flag and pass in the name of the test.
 - [ ] Use a plugin that can specify the test you want to run.
 - [ ] It is not possible to do this.
 
@@ -172,11 +173,11 @@ mvn install
 - [ ] The name of the artifact must also be specified in the command.
 - [ ] The name of the remote repository must also be specified in the command.
 - [ ] Deploying artifacts to a remote repository must be done manually.
-- [ ] The deploy phase of the default Maven lifecycle comes after the install phase.
+- [x] The deploy phase of the default Maven lifecycle comes after the install phase.
 
 #### Q25. Suppose you want to include a properties file in the JAR generated by your Maven build. What directory should you put it in?
 
-- [ ] `${basedir}/src/main/resources`
+- [x] `${basedir}/src/main/resources`
 - [ ] `${basedir}/src/main/java/resources`
 - [ ] `${basedir}/resources`
 - [ ] `${basedir}/src/main/properties`
@@ -186,7 +187,7 @@ mvn install
 - [ ] Environment
 - [ ] Properties
 - [ ] Switch
-- [ ] Profiles
+- [x] Profiles
 
 #### Q27. What does it mean if the scope of a dependency is runtime?
 
@@ -198,7 +199,7 @@ mvn install
 #### Q28. If you want to utilitze a locally developed JAR file in another project and that JAR file has not been deployed to either the Maven central repository or your own locally sourced mirror repository, what Maven goal do you need to execute on the locally developed JAR project?
 
 - [ ] package
-- [ ] install
+- [x] install
 - [ ] compile
 - [ ] test
 
@@ -208,3 +209,134 @@ mvn install
 - [x] JAR
 - [ ] EAR
 - [ ] POM
+
+#### Q30. What does the following command do?
+
+    > mvn archetype:generate \
+    -DgroupID=sample-maven-project \
+    -DartifactID=com.palmer.bethan.sample \
+    -Dversion=1.0.0 \
+    -DinteractiveMode=false
+
+- [ ] It does nothing since no archetype has been specified
+- [ ] It generates a new Maven archetype
+- [x] It generates a new Maven projet using the default Maven archetype
+- [ ] It cleans and installs the sample-maven-project project
+
+#### Q31. When defining a dependency that is included with the runtime container, what scope do you use in the pom.xml?
+
+- [x] provided
+- [ ] compile
+- [ ] execution
+- [ ] runtime
+
+#### Q32. What argument do you pass to Maven in order to update SNAPSHOT from the remote repository?
+
+- [x] -U
+- [ ] -J
+- [ ] -X
+- [ ] -S
+
+#### Q33. When performing a release using the Maven release plugin, which environment variable for batch mode is used to define the stamp placed in SCM to indicate the state of the artifact for the actual release?
+
+- [ ] tag
+- [ ] scmMark
+- [ ] developmentVersion
+- [x] releaseVersion
+
+#### Q34. These are two general uses of plugins. The first is build and the second is **\_**
+
+- [x] reporting
+- [ ] servers
+- [ ] dependencies
+- [ ] distribution management
+
+#### Q35. What does the mvn clean command do?
+
+- [x] It removes the target directory
+- [ ] It updates the version of the plugins defned in the POM file.
+- [ ] It removes unused dependencies in your project
+- [ ] It builds your project
+
+#### Q36. If you want to utilize a locally develop JAR file in another project and that JAR file has not been deployed to either the Maven central repository or your own locally sourced mirror repository, what Maven goal do you need to execute on the locally developed JAR project?
+
+- [x] install
+- [ ] test
+- [ ] compile
+- [ ] package
+
+#### Q37. Bellow is a definition of the Maven JAR Plugin, where the main class is set to com.palmer.bethan.App. What is the effect of this?
+
+```
+<configuration>
+    <archive>
+        <manifest>
+            <addClasspath>true</addClasspath>
+            <mainClass>com.palmer.bethan.App</mainClass>
+        </manifest>
+    </archive>
+</configuration>
+```
+
+- [ ] Maven will generate javadocs for the App class.
+- [x] Maven will generate an executable JAR, which can be used to run the App class.
+- [ ] Maven will include only the App class when it compiles the source code.
+- [ ] Maven will add an empty main method to the App class.
+
+#### Q38. Suppose you are packaging a Mave project and see the following error "[WARNING] Using platform encoding (CP1252 actually) to copy filtered resources, i.e. build platform dependent!" What do you add to your POM file to set platform encoding to ensure your build is not platform dependet ?
+
+- [ ] <project.build.resources>
+- [ ] <maven.compiler.source>
+- [x] <project.build.sourceEncoding>
+- [ ] <project.compiler.encoding>
+
+#### Q39. Why might you not want to include groupId and version elements in child POM files?
+
+- [x] all of these answers
+- [ ] dependencies
+- [ ] version
+- [ ] groupId
+
+#### Q40. The settings.xml file that provides the user-specific settings for Maven is contained in which directory by default?
+
+- [ ] `${maven.home}/${user.name}/settings.xml`
+- [x] `${user.home}/.m2/settings.xml`
+- [ ] `${maven.home}/conf/settings.xml`
+- [ ] `${user.home}/maven/settings.xml`
+
+#### Q41. Suppose you are using Maven in a corporate environment and, to save bandwidth, you want to prevent the need for large numbers of developers to download the same dependency from the internet. What do you do to limit this?
+
+- [x] Create an internal corporate repository to store copies of the necessary artifacts.
+- [ ] It is not possible to do this.
+- [ ] When defining the dependency, set the scope to provided.
+- [ ] Each developer should define the dependency in the POM file in the local copy of the project.
+
+#### Q42. In multimodule projects, what do child POMs inherit from the parent POM?
+
+- [x] all of these answers
+- [ ] dependencies
+- [ ] groupId
+- [ ] version
+
+#### Q43. Below is a report generated for a multimodule project with the Checkstyle Plugin. Why might the highlighted links to the two child projects _not_ work?
+
+![q43](q43.png)
+
+- [ ] The Checkstyle Plugin does not work on child modules.
+- [ ] Each Checkstyle report is in the target/site folder of the respective module.
+- [ ] All links in Checkstyle reports must be specified in the plugin definition.
+- [ ] Checkstyle reports for child modules have to be behind a firewall.
+
+#### Q44. Which build plugin allows you to create a "fat" JAR file that contains all of the dependencies in the final JAR file?
+
+- [ ] Fatjar
+- [x] Shade
+- [ ] Dependency
+- [ ] Package
+
+#### Q45. What is the default scope for Maven dependencies?
+
+- [ ] Test
+- [x] Compile
+- [ ] Runtime
+- [ ] Build
